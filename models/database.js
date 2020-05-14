@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
 
-const appSequelize = new Sequelize('gql_learn', 'root', '123456', {
+const appSequelize = new Sequelize('', 'root', '', {
   dialect: 'mysql',
   host: 'localhost',
   operatorsAliases: 0,
