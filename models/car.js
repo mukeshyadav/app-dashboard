@@ -1,0 +1,19 @@
+export default (sequelize, DataTypes) => {
+  const Car = sequelize.define('car', {
+    make: {
+      type: DataTypes.STRING
+    },
+    model: {
+      type: DataTypes.STRING
+    },
+    color: {
+      type: DataTypes.STRING
+    }
+  });
+
+  Car.associate = models => {
+    Car.belongsTo(models.User);
+  };
+
+  return Car;
+};
