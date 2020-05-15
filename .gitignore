@@ -1,3 +1,4 @@
 /node_modules
 .vscode
 cloud_sql_proxy
+/**/database.js
