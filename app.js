@@ -1,5 +1,6 @@
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
+import cors from 'cors';
 
 const app = express();
 
@@ -19,5 +20,6 @@ const server = new ApolloServer({
 });
 
 server.applyMiddleware({ app });
+app.use(cors());
 
-app.listen(3000, () => console.info('Runing Apollo'));
+app.listen(3000, () => console.info('Runing Apollo on port: 3000'));
