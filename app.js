@@ -7,14 +7,14 @@ import models from './models';
 import typeDefs from './typedefs';
 import resolvers from './resolvers';
 
-const me = models.users[0];
+// const me = models.users[0];
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: {
-    models,
-    me
+    models
+    // me
   }
 });
 
